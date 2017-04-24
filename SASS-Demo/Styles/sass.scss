@@ -1,3 +1,51 @@
-﻿body {
-    background:black
+﻿$mainColor: white;
+$mainFont: Georgia;
+$mainFontSize: 14px;
+
+$baseClass: "panel";
+
+body {
+    background: lighten(black, 50%);
+}
+
+.navigator {
+    background-color: black;
+    width: 100%;
+}
+
+.#{$baseClass}-A {
+    background-color: blue;
+    padding: 10px;
+    color : $mainColor;
+    font-family: $mainFont; 
+    font-size: $mainFontSize;
+    margin: 10px;
+}
+
+.#{$baseClass}-B {
+    background-color: #ff0000;
+    padding: 10px;
+    color: $mainColor;
+    font-family: $mainFont;
+    font-size: $mainFontSize + 2;
+    margin: 10px;
+}
+
+nav 
+{
+    font-size: $mainFontSize;
+    color: $mainColor;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    position: relative;
+    ul 
+    {
+        list-style: none;
+        li 
+        {
+            float: left;
+            margin: 2px;
+        }
+    }
 }
